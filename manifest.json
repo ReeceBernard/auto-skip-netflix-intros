@@ -3,8 +3,13 @@
   "description": "Just a quick extension to more efficiently consume netflix content instead of going outside.",
   "version": "1.0",
   "manifest_version": 3,
+  "content_scripts": [
+    {
+      "js": ["index.js"],
+      "matches": ["https://www.netflix.com/watch/*"]
+    }
+  ],
   "action": {
-    "default_popup": "index.html",
     "default_icon": "logo.png"
   }
 }
